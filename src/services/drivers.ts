@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const fetchDriversDataByYear = async () => {
   const { data } = await axios.get(
-    'http://ergast.com/api/f1/2024/drivers.json',
+    'https://ergast.com/api/f1/2024/drivers.json',
     {
       headers: {
         Accept: 'application/json',
