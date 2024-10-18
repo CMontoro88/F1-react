@@ -5,7 +5,7 @@ import { DriverData } from '@/types';
 import { useQuery } from '@tanstack/react-query';
 import { fetchDriversDataByYear } from '@/services';
 
-const Drivers = () => {
+const DriversView = () => {
   const { data, isPending } = useQuery({
     queryKey: ['driversByYear'],
     queryFn: fetchDriversDataByYear,
@@ -25,7 +25,7 @@ const Drivers = () => {
   }
   return (
     <>
-      <h3 className="text-black text-lg uppercase">Drivers</h3>
+      <h2 className="text-black text-2xl uppercase">Drivers</h2>
       <div className="flex flex-wrap gap-5 sm:gap-20">
         {data.map((driverData: DriverData) => (
           <DriverOption
@@ -51,4 +51,4 @@ const Drivers = () => {
   );
 };
 
-export default Drivers;
+export default DriversView;

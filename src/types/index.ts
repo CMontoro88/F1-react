@@ -1,10 +1,2 @@
-export interface DriverData {
-  code: string;
-  dateOfBirth: string;
-  driverId: string;
-  familyName: string;
-  givenName: string;
-  nationality: string;
-  permanentNumber: string;
-  url: string;
-}
+export * from './drivers.ts';
+export * from './teams.ts';
